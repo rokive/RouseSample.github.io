@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Navbar Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbars/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" rel = "stylesheet"> -->
+    <link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: #FFF8E1;
+            padding-bottom: 0px;
+        }
+
+        .navbar-brand img {
+            width: 80px;
+        }
+
+        .bg-light {
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        @media screen and (min-width: 768px) {
+            .bg-light {
+                background-color: #FFF8E1 !important;
+            }
+
+            .navbar-brand img {
+                width: 100px;
+            }
+
+            .navbar-brand {
+                margin-right: 0;
+                padding: 0 1em;
+            }
+
+            .navbar-nav {
+                align-items: center;
+            }
+
+            .nav-link:focus,
+            .nav-link:hover {
+                color: rgba(109, 68, 18, 0.65);
+            }
+
+        }
+
+        .navbar-light .navbar-nav .nav-link:focus,
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: rgba(109, 68, 18, 0.65);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #333333;
+            font-family: Cinzel, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 0px;
+            text-transform: none;
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+
+        h1 {
+            color: #333333;
+            text-align: left;
+            font-size: 34;
+            font-family: Cinzel, Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+
+        .title {
+            font-weight: normal;
+            ;
+        }
+
+        hr:not([size]) {
+            height: 1px;
+        }
+
+        hr {
+            margin: 7px 0px;
+            color: inherit;
+            background-color: currentColor;
+            border: 0;
+            opacity: .50;
+        }
+
+        .info {
+            border: 1px solid #5e5b5b !important;
+            border-left: 2px solid #5e5b5b !important;
+
+        }
+
+        .info-link {
+            color: #844e02;
+            text-decoration: none
+        }
+
+        .nav-item-custom {
+            color: #333333;
+            font-family: Cinzel, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: 0px;
+            text-transform: none;
+        }
+
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding:6px 14px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: rgb(236, 236, 236);
+            color: #555;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+    <div class=" text-center mx-auto d-none d-md-block">
+        <img class="d-block mx-auto mt-4 mb-4" src="https://kokkari.com/wp-content/uploads/kokkari-logo-350.png" alt="">
+
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-md-none" href="#">
+                <img src="https://kokkari.com/wp-content/uploads/kokkari-logo-350.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CUISINE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            MENUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">RESERVATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            PRIVATE DINING</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <main>
+
+            <div class="row justify-content-md-center">
+
+                <div class="col-12 col-sm-12 col-md-10 col-xl-10">
+                    <header class="pb-3 mb-4">
+                        <h1>Private Dining and Special
+                            Events</h1>
+                    </header>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-10 col-xl-10 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+                            <header>
+                                <h3 class="title">Chef’s Table</h2>
+                            </header>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-xl-6">
+                                    <hr />
+                                    <hr />
+                                    <span>
+                                        The focal point of the Kouzina is the Chef’s Table. It is a beautiful 20 foot
+                                        long hand-carved wooden table that can accommodate up to 20 people. This space
+                                        is ideal for celebrations, special family events and casual business functions
+                                        that do not require a completely private space.
+                                    </span>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-5 col-xl-5" style="margin-top: 5px;">
+                                    <img src="https://kokkari.com/wp-content/uploads/chef-table.jpg"
+                                        class="img-responsive" alt="Responsive image" width="100%" height="100%" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-10 col-xl-10 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+                            <header>
+                                <h3 class="title">OENOS ROOM</h2>
+                            </header>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-xl-6">
+                                    <hr />
+                                    <hr />
+                                    <span>
+                                        Adjacent to the Kouzina is the Oenos or “wine” room. This is one of Kokkari’s
+                                        two private dining rooms. This room features large windows that look out on to
+                                        Jackson Street and a dramatic wall of wine racks that spans floor to ceiling.
+                                        The large, wood-framed, sliding glass doors that separate the Oenos Room from
+                                        the main dining area allow guests to feel part of the restaurant while still
+                                        being in a private space. This room can accommodate 30 people.
+                                    </span>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-5 col-xl-5" style="margin-top: 5px;">
+                                    <img src="	https://kokkari.com/wp-content/uploads/Kokkari_oenos-room.jpg"
+                                        class="img-responsive" alt="Responsive image" width="100%" height="100%" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-10 col-xl-10 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+                            <header>
+                                <h3 class="title">HANIA</h2>
+                            </header>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-xl-6">
+                                    <hr />
+                                    <hr />
+                                    <span>
+                                        This unique private dining room is located downstairs and is completely separate
+                                        from the main dining area. The room has the feel of a wine cellar with warm wood
+                                        accents and rich, tapestry carpets. It features a rectangular polished wood
+                                        table that accommodates up to 10 people comfortably. The Hania Room is ideal for
+                                        small business meetings and intimate family functions.
+                                    </span>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-5 col-xl-5" style="margin-top: 5px;">
+                                    <img src="https://kokkari.com/wp-content/uploads/Kokkari_Hania-room.jpg"
+                                        class="img-responsive" alt="Responsive image" width="100%" height="100%" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-10 col-xl-10 mb-5 p-2">
+                    <div class="row ">
+                        <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+                            <div class="info p-4">
+                                <header>
+                                    <h3 class="title">Further Group Dining Information</h2>
+                                </header>
+
+                                <p>For group dining options, room minimums and availability, please contact our Event
+                                    Manager, <a href="mailto:events@kokkari.com" class="info-link">Melissa Lopez</a>.
+                                </p>
+                                <p><strong>Phone:</strong> <a href="tel:+14159810983" class="info-link">
+                                        415.981.0983</a><br>
+                                    <strong>Email:</strong> <a href="mailto:events@kokkari.com"
+                                        class="info-link">events@kokkari.com</a>
+                                </p>
+                                <p><strong>Download:</strong> <a
+                                        href="/wp-content/uploads/KokkariPrivateDining20180910.pdf"
+                                        class="info-link">Private Dining Packet</a>&nbsp;or <a
+                                        href="https://kokkari.com/wp-content/uploads/KokkariLunchPacket20180910.pdf"
+                                        class="info-link">Lunch Event Packet</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-xl-6 mb-3 p-2 ">
+                    <nav class="navbar navbar-expand-md navbar-light" style="background-color:FFF8E1 !important;">
+                        <div class="container-fluid" style="align-items: center;">
+                            <ul class="navbar-nav mx-auto" style="text-align: center;">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        PRESS ROOM</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"> GIFT CERTIFICATES <br />& COOKBOOK </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">
+                                        CONTACT</a>
+                                </li>
+                            </ul>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <header class="d-flex justify-content-center">
+                    <ul class="nav nav-pills">
+
+                        <li class="nav-item"><a href="#" class="nav-link nav-item-custom">FAQs</a></li>
+                        <span style="padding-top: 7px;" class="nav-item-custom">|</span>
+
+                        <li class="nav-item"><a href="#" class="nav-link nav-item-custom">About</a></li>
+                    </ul>
+                </header>
+            </div>
+            <div class="row  justify-content-md-center">
+                <div class="col-12 col-sm-12 col-md-3 col-xl-3">
+                    <p style="text-align: center;"><span style="color:#333;">KOKKARI ESTIATORIO<br>200 Jackson Street
+                            (at Front St.)<br> San Francisco, CA 94111<br> p: <a href="tel:+14159810983"
+                                class="info-link">415.981.0983</a> </span></p>
+                    <p style="text-align: center;"><a href="/reservations"
+                            class="info-link text-capitalize">reservations & hours
+                            <br>
+                            directions</a></p>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    <footer class="footer mt-auto py-3 bg-dark" style="    margin-bottom: -20px;">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
